@@ -1,60 +1,85 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Pastiche</title>
 
-  <title>Suite Pastiche</title>
+    <style>
+        body {
+            font-family: 'Futura', sans-serif; /* Use Futura as the primary font with sans-serif as fallback */
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Set a background color if needed */
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        .banner {
+            width: 100%;
+            text-align: center;
+            padding: 100px 0 30px; /* Doubled padding above the image and reduced below */
+        }
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180.png">
+        .banner img {
+            width: 350px; /* Set the width to 350 pixels */
+            height: 350px; /* Set the height to 350 pixels */
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto; /* Center the image horizontally */
+            display: block; /* Ensure the image is treated as a block element */
+        }
 
-  <link rel="icon" href="/images/favicon.png">
+        h1 {
+            font-family: 'Futura', serif; /* Use Futura as the primary font for heading with serif as fallback */
+            font-size: 36px;
+            margin: 10px 0; /* Halved margin between heading and body copy */
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Nunito&display=swap" rel="stylesheet">
+        .body-copy {
+            max-width: 600px; /* Reduced width of the body copy */
+            margin: 5px auto; /* Halved margin between heading and body copy */
+            padding: 0 20px;
+            text-align: justify;
+            text-align: center; /* Center the text */
+        }
 
-  <style>
-  .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-  }
-  h1 {
-    font-family: "Chicle", serif;
-    font-size: 64px;
-  }
-  .p1 {
-    font-family: "Nunito", sans-serif;
-    font-size: 20px;
-  }
-  a {
-  text-decoration: none;
-  }
-  </style>
+        .body-copy img {
+            max-width: 100%; /* Make sure the image doesn't exceed its container */
+            height: auto;
+            margin: 0 auto 20px; /* Center the image horizontally and add some space below it */
+            display: block; /* Ensure the image is treated as a block element */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFA500; /* Orange background */
+            color: white; /* White text color */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <div style="text-align: center;">
-  <div class="container">
+    <div class="banner">
+        <img src="/images/SP_Logo.png" alt="Suite Pastiche logo"> <!-- Replace this with the actual banner image source -->
+        <h1>Suite Pastiche</h1>
+    </div>
 
-  <img src="/images/600x450.png" alt="Suite Pastiche logo"/>
+    <div class="body-copy">
+        <p>Melbourne's hi-fi dance party for the socially engaged and sonically curious.</p>
+        <p>Our next party is on 23 March 🪩</p>
+    </div>
 
-  <h1>Suite Pastiche</h1>
-
-  <p class="p1">
-  Melbourne's hi-fi dance party for the socially engaged and sonically curious.
-  <br>
-  <br>
-  <a href="mailto:matt@suitepastiche.com">Join the guest list</a>
-  </p>
-
-  </div>
-  </div>
+    <div class="button-container">
+        <a href="https://events.humanitix.com/suitepastiche1?utm_source=social" class="button">Get party tickets</a>
+    </div>
 
 </body>
-
 </html>
