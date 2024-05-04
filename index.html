@@ -20,10 +20,11 @@
         }
 
         .body img {
-          width: 50vw; /* Use a percentage of the viewport width */
-          max-width: 100%; /* Ensure the image doesn't exceed its original size */
-          height: auto;
+          width: auto; /* Ensure the image is not constrained by a specific width */
+          height: auto; /* Ensure the image is not constrained by a specific height */
           margin: 0 auto 20px;
+          transform: scale(0.5); /* Scale the image down by half */
+          transform-origin: center; /* Ensure the image is scaled from its center */
         }
 
         .button {
@@ -38,7 +39,7 @@
         }
 
         .button:hover {
-            background-color: #a87293;
+            background-color: #965d79;
         }
     </style>
 </head>
