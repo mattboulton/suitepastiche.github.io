@@ -1,66 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suite Pastiche</title>
-
     <style>
         body {
-            font-family: 'Futura', sans-serif; /* Use Futura as the primary font with sans-serif as fallback */
+            font-family: 'Futura', sans-serif;
             color: #faefd8;
             margin: 0;
             padding: 15px 0 0;
-            background-color: #de7226; /* Set a background color if needed */
+            background-color: #de7226;
+            text-align: center; /* Center align all text in body */
         }
 
         h1 {
-            font-family: 'Fascinate', serif; /* Use Futura as the primary font for heading with serif as fallback */
+            font-family: 'Fascinate', serif;
             font-size: 36px;
-            margin: 0 0; /* No margin */
+            margin: 0; /* No margin */
         }
 
         .body-copy {
-            max-width: 600px; /* Reduced width of the body copy */
-            margin: auto; /* Halved margin between heading and body copy */
+            max-width: 600px;
+            margin: auto; /* Center the text block horizontally */
             padding: 0 20px;
-            text-align: justify;
-            text-align: center; /* Center the text */
+            text-align: center; /* Center align text */
         }
 
         .body-copy img {
-            max-width: 100%; /* Make sure the image doesn't exceed its container */
-            height: auto;
-            margin: 0 auto 20px; /* Center the image horizontally and add some space below it */
-            display: block; /* Ensure the image is treated as a block element */
+            max-width: 35%;
+            max-height: 35%;
+            margin: 0 auto 20px;
+            display: block;
         }
 
         .button {
             display: inline-block;
             padding: 8px 16px;
-            background-color: #803062; /* Plum background */
-            color: #faefd8; /* Off-white text color */
+            background-color: #803062;
+            color: #faefd8;
             text-decoration: none;
             border-radius: 5px;
             border: 2px solid #faefd8;
-            transition: background-color 0.3s; /* Smooth transition for color change */
+            transition: background-color 0.3s;
         }
 
         .button:hover {
-            background-color: #9c6484; /* Change the background color on hover */
+            background-color: #9c6484;
         }
     </style>
 </head>
-
-<body style="background-color: #803062; text-align: center;">
-
-    <img src="/images/20240706_1080.png" alt="Music notes dancing in between two speakers. In the background is a historic building with a disco ball looming behind it." style="max-width: 35%; max-height: 35%; margin: 0 auto;">
-
-    <div style="text-align: center; margin-top: 20px;">
+<body>
+    <img src="/images/20240706_1080.png" alt="Music notes dancing in between two speakers. In the background is a historic building with a disco ball looming behind it.">
+    <div class="body-copy">
         <a href="https://events.humanitix.com/suitepastiche2" class="button">Get tickets</a>
         <a href="https://www.instagram.com/suitepastiche/" class="button" style="margin-left: 10px;">Follow</a>
     </div>
-
 </body>
-
 </html>
