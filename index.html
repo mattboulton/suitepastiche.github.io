@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suite Pastiche</title>
     <meta name="description" content="Melbourne's hi-fi dance party for the socially engaged and sonically curious. Our next party is 6 July.">
@@ -12,49 +13,86 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <style>
-        body {
-            font-family: 'Futura', sans-serif;
-            color: #faefd8;
+        * {
             margin: 0;
-            padding: 15px 0 40px;
-            background-color: #803062;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            background-color: #823061; /* Background color from the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            padding: 20px; /* Add some padding to ensure content doesn't touch edges */
+        }
+
+        .container {
             text-align: center;
+            max-width: 100%;
         }
 
-        img  {
-          max-width: 85%;
-          height: auto;
-          margin-bottom: 20px;
+        .center-image {
+            width: 50%;
+            max-width: 100%;
+            height: auto;
         }
 
-        .body {
-            max-width: 540px;
-            margin: auto;
-            padding: 0 20px;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
         }
 
-        .button {
-            display: inline-block;
-            padding: 6px 12px;
-            background-color: #803062;
-            color: #faefd8;
-            text-decoration: none;
-            border-radius: 50px;
-            border: 2px solid #faefd8;
-            transition: background-color 0.5s;
-
+        .rounded-button {
+            background-color: #FAEFD9;
+            color: #6D2A61;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px; /* Space between buttons */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+            text-decoration: none; /* Ensure buttons don't have underline */
+            display: inline-block; /* Ensure buttons are inline */
         }
 
-        .button:hover {
-            background-color: #965d79;
+        .rounded-button:hover {
+            background-color: #6D2A61; /* Inverted background color on hover */
+            color: #FAEFD9; /* Inverted text color on hover */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .center-image {
+                width: 70%; /* Increase image size for tablets */
+            }
+
+            .rounded-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .center-image {
+                width: 90%; /* Increase image size for mobile devices */
+            }
         }
     </style>
 </head>
 <body>
-    <img src="images/540x675.png">
-    <div class="body">
-        <a href="https://events.humanitix.com/suitepastiche2" class="button">Get tickets</a>
-        <a href="https://www.instagram.com/suitepastiche/" class="button" style="margin-left: 10px;">Follow</a>
+    <div class="container">
+        <img src="images/image.png" class="center-image">
+        <div class="button-container">
+            <a href="https://events.humanitix.com/suitepastiche2" class="rounded-button">Get tickets</a>
+            <a href="https://www.instagram.com/suitepastiche/" class="rounded-button">Follow</a>
+        </div>
     </div>
 </body>
 </html>
